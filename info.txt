@@ -1,0 +1,19 @@
+https://kheohyeewei.medium.com/minimal-webpack-setup-a5f32c5f8960
+
+touch helloWorld.css helloWorld.js index.js webpack.dev.js webpack.prod.js
+
+npm i -D webpack webpack-cli webpack-dev-server css-loader html-webpack-plugin style-loader
+npm i -D mini-css-extract-plugin clean-webpack-plugin
+
+/*
+	md node_modules\webpack-cli\bin\config
+	touch node_modules\webpack-cli\bin\config\config-yargs.js
+
+	md node_modules\webpack-cli\bin\utils
+	touch node_modules\webpack-cli\bin\utils\convert-argv.js
+*/
+
+
+error loading webpack-cli/bin/config/config-yargs
+trying webpack-cli/bin/config-yargs
+Error: Cannot find module 'webpack-cli/bin/config-yargs'

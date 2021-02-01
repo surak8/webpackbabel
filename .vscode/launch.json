@@ -1,0 +1,43 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "tester",
+			"program": "${workspaceFolder}/create-em.js",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"type": "pwa-node"
+		},
+		{
+			"name": "debug:riktest",
+			"request": "launch",
+			"runtimeArgs": [
+				"run-script",
+				"riktest"
+			],
+			"runtimeExecutable": "npm",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"type": "pwa-node"
+		},
+		{
+			"name": "debug:create-em",
+			"request": "launch",
+			"runtimeArgs": [
+				"run-script",
+				"create-em"
+			],
+			"runtimeExecutable": "npm",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"type": "pwa-node"
+		}
+	]
+}

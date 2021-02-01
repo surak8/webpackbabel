@@ -1,0 +1,92 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true // fixes 'require'
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended"
+	],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+		//"node": "true"
+	},
+	"plugins": [
+		"react"
+	],
+	"rules": {
+		//"no-unused-vars": 1,
+		"comma-dangle": [
+			"error",
+			{
+				"arrays": "never",
+				"objects": "never",
+				"imports": "never",
+				"exports": "never",
+				"functions": "never"
+			}
+		],
+		"quotes": [
+			"error",
+			"single"
+		],
+		"array-bracket-spacing": [
+			"error",
+			"never",
+			{
+				"singleValue": false,
+				"arraysInArrays": false,
+				"objectsInArrays": false
+			}
+		],
+		//"array-bracket-spacing": [
+		//	2,
+		//	"never"
+		//],
+		"indent": [
+			2,
+			"tab"
+		],
+		//"multiple-empty-lines": "error",
+		"no-multiple-empty-lines": [
+			"error",
+			{
+				"max": 1,
+				"maxEOF": 0
+			}
+		],
+		"newline-before-return": "error",
+		"no-undefined": "warn",
+		//"no-unused-vars": "warn",
+		"no-unused-vars": [
+			"error",
+			{
+				"vars": "all",
+				"args": "after-used",
+				"ignoreRestSiblings": false
+			}
+		],
+		"no-unused-expressions": "error",
+		"newline-after-var": [
+			"error",
+			"always"
+		],
+		"semi": [
+			"error",
+			"always"
+		],
+		"brace-style": [
+			"error",
+			//"stroustrup",
+			"1tbs",
+			{
+				"allowSingleLine": true
+			}
+		]
+	}
+}

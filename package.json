@@ -1,0 +1,38 @@
+{
+	"name": "webpackbabel",
+	"version": "1.0.0",
+	"private": "true",
+	"license": "MIT",
+	"devDependencies": {
+		"clean-webpack-plugin": "^3.0.0",
+		"css-loader": "^5.0.1",
+		"eslint": "^7.18.0",
+		"eslint-cli": "^1.1.1",
+		"eslint-plugin-react": "^7.22.0",
+		"fs": "^0.0.1-security",
+		"html-webpack-plugin": "^4.5.1",
+		"lodash": "^4.17.20",
+		"mini-css-extract-plugin": "^1.3.5",
+		"style-loader": "^2.0.0",
+		"webpack": "^5.19.0",
+		"webpack-dev-server": "^3.11.2"
+	},
+	"scripts": {
+		"start:0": "webpack --config webpack.dev.js",
+		"start:1": "webpack-dev-server --config webpack.dev.js",
+		"start": "webpack-dev-server --config webpack.dev.js",
+		"riktest:0": "webpack --config webpack.rik.js --mode none --debug --verbose --bail",
+		"riktest:1": "webpack --config webpack.rik.js --mode none --verbose --bail",
+		"riktest:help": "webpack --config webpack.rik.js --help",
+		"riktest:test": "webpack --config webpack.helloWorld.js --mode none --bail",
+		"riktest": "webpack-dev-server --config webpack.helloWorld.js --mode development --bail --hot",
+		"riktest:dev": "webpack-dev-server --config webpack.rik.js --mode developement",
+		"riktest:prod": "webpack --config webpack.rik.js --mode production",
+		"build": "webpack --config webpack.prod.js",
+		"create-em": "node create-em.js"
+	},
+	"dependencies": {
+		"global": "^4.4.0",
+		"webpack-cli": "^4.4.0"
+	}
+}
